@@ -69,8 +69,32 @@
         .feature-item i { color: var(--accent); }
 
         /* FOOTER */
+       
         footer { background: var(--primary); color: #94a3b8; padding: 40px 5%; text-align: center; font-size: 13px; }
+   /* Style nâng cấp cho nút Chủ nuôi */
+.btn-chunuoi-pro {
+    background: linear-gradient(135deg, #059669, #047857); /* Xanh lá đậm chuẩn chuyên nghiệp */
+    color: #ffffff !important;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(5, 150, 105, 0.2);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.btn-chunuoi-pro:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(5, 150, 105, 0.3);
+    background: linear-gradient(135deg, #047857, #065f46);
+}
     </style>
+
 </head>
 <body>
 
@@ -84,10 +108,14 @@
             <a href="#">Bảng giá</a>
         </nav>
         <div class="auth-actions">
-             <a href="https://app.vetcare.vn/chunuoi/login.html" class="btn-dangky">Chủ nuôi</a>
-            <a href="https://app.vetcare.vn/quanly/dangky-chupk.html" class="btn-dangky">Đăng ký</a>
-            <a href="https://app.vetcare.vn/login.html" class="btn-dangnhap">Đăng nhập</a>
-        </div>
+    <!-- Nút mới với icon và class pro -->
+    <a href="https://app.vetcare.vn/chunuoi/login.html" class="btn-chunuoi-pro">
+        <i class="fa-solid fa-paw"></i> Chủ nuôi
+    </a>
+    
+    <a href="https://app.vetcare.vn/quanly/dangky-chupk.html" class="btn-dangky">Đăng ký</a>
+    <a href="https://app.vetcare.vn/login.html" class="btn-dangnhap">Đăng nhập</a>
+</div>
     </header>
 
     <!-- HERO -->
