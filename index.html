@@ -30,6 +30,34 @@
         .btn-dangky { background: #ffffff; color: var(--accent); border: 1px solid var(--accent); padding: 8px 16px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 13px; transition: 0.2s; white-space: nowrap; }
         .btn-dangky:hover { background: #f0f9ff; }
 
+        /* BANNER ƯU ĐÃI 30 NGÀY MIỄN PHÍ */
+        .promo-banner {
+            background: linear-gradient(135deg, #0284c7, #0369a1);
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: inset 0 -2px 5px rgba(0,0,0,0.1);
+        }
+        .promo-banner a {
+            background: #ffffff;
+            color: #0284c7;
+            padding: 4px 12px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+        .promo-banner a:hover {
+            background: #f0f9ff;
+        }
+
         /* HERO SECTION */
         .hero { background: var(--primary); color: white; padding: 70px 5%; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap; }
         .hero-text { flex: 1; min-width: 300px; max-width: 600px; }
@@ -60,15 +88,15 @@
         .btn-chunuoi { background: #059669; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 15px; display: inline-block; transition: background 0.2s; }
         .btn-chunuoi:hover { background: #047857; }
 
-        /* BẢNG GIÁ CHUẨN THEO ẢNH */
+        /* BẢNG GIÁ DỊCH VỤ & ĐĂNG KÝ */
         .pricing-section { padding: 80px 5%; background: #ffffff; text-align: center; border-top: 1px solid #e2e8f0; }
-        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto; text-align: left; }
-        .pricing-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 40px 30px; display: flex; flex-direction: column; justify-content: space-between; position: relative; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto; text-align: left; }
+        .pricing-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 35px 25px; display: flex; flex-direction: column; justify-content: space-between; position: relative; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
         .pricing-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
         .pricing-card.popular { border: 2px solid var(--accent); background: #f8fafc; }
         .popular-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: #dc2626; color: white; font-size: 11px; font-weight: bold; padding: 5px 16px; border-radius: 20px; text-transform: uppercase; display: flex; align-items: center; gap: 5px; box-shadow: 0 4px 10px rgba(220,38,38,0.2); }
-        .pricing-title { font-size: 20px; font-weight: 800; color: var(--primary); margin-bottom: 8px; text-align: center; }
-        .pricing-price { font-size: 28px; font-weight: 900; color: var(--accent); margin-bottom: 25px; text-align: center; }
+        .pricing-title { font-size: 18px; font-weight: 800; color: var(--primary); margin-bottom: 8px; text-align: center; }
+        .pricing-price { font-size: 26px; font-weight: 900; color: var(--accent); margin-bottom: 25px; text-align: center; }
         .pricing-price span { font-size: 13px; font-weight: normal; color: #64748b; }
         .pricing-features { list-style: none; margin-bottom: 30px; display: flex; flex-direction: column; gap: 14px; }
         .pricing-features li { font-size: 13px; color: #334155; display: flex; align-items: center; gap: 10px; }
@@ -88,6 +116,8 @@
 
         /* FOOTER */
         footer { background: var(--primary); color: #94a3b8; padding: 40px 5%; text-align: center; font-size: 13px; }
+        .footer-support { margin-top: 10px; color: #38bdf8; font-weight: 600; }
+        .footer-support i { color: #25D366; }
 
         /* Style nâng cấp cho nút Chủ nuôi */
         .btn-chunuoi-pro {
@@ -122,6 +152,7 @@
             .hero { padding: 40px 5%; }
             .hero-text h1 { font-size: 26px; }
             .section-title { font-size: 24px; }
+            .promo-banner { font-size: 12px; flex-direction: column; gap: 5px; text-align: center; }
         }
     </style>
 </head>
@@ -145,13 +176,19 @@
         </div>
     </header>
 
+    <!-- BANNER THÔNG BÁO ƯU ĐÃI DÙNG THỬ 30 NGÀY -->
+    <div class="promo-banner">
+        <span>🎁 Đăng ký ngay hôm nay để trải nghiệm toàn bộ tính năng VetCare Pro hoàn toàn miễn phí trong 30 ngày!</span>
+        <a href="https://app.vetcare.vn/quanly/dangky-chupk?goi=30ngay">Dùng thử ngay</a>
+    </div>
+
     <!-- HERO -->
     <section class="hero">
         <div class="hero-text">
             <span class="hero-badge">Dành cho phòng khám, bệnh viện và chuỗi thú y</span>
             <h1>Phần mềm quản lý phòng khám thú y toàn diện</h1>
             <p>Nền tảng số hóa toàn diện giúp tối ưu hóa quy trình lâm sàng, tự động hóa hồ sơ bệnh án và nâng cao chất lượng chăm sóc chuyên nghiệp.</p>
-            <a href="https://app.vetcare.vn/quanly/dangky-chupk" class="btn-dangnhap" style="padding: 12px 28px; font-size: 16px; display: inline-block;">Trải nghiệm ngay</a>
+            <a href="https://app.vetcare.vn/quanly/dangky-chupk?goi=30ngay" class="btn-dangnhap" style="padding: 12px 28px; font-size: 16px; display: inline-block;">Dùng thử 30 ngày miễn phí</a>
         </div>
         <div class="hero-image">
             <div class="screen-mockup">
@@ -209,12 +246,31 @@
         </div>
     </section>
 
-    <!-- BẢNG GIÁ DỊCH VỤ & ĐĂNG KÝ (ĐÃ CẬP NHẬT THEO YÊU CẦU) -->
+    <!-- BẢNG GIÁ DỊCH VỤ & ĐĂNG KÝ -->
     <section id="pricing-section" class="pricing-section">
         <h2 class="section-title">Bảng giá dịch vụ phần mềm linh hoạt</h2>
-        <p style="color: #64748b; margin-top: -30px; margin-bottom: 40px; font-size: 16px;">Lựa chọn gói cước phù hợp nhất với quy mô phòng khám của bạn</p>
+        <p style="color: #64748b; margin-top: -30px; margin-bottom: 15px; font-size: 16px;">Lựa chọn gói cước phù hợp nhất với quy mô phòng khám của bạn</p>
+        <p style="color: #0284c7; margin-bottom: 40px; font-size: 14px; font-weight: 600;">
+            <i class="fa-solid fa-headset"></i> Hỗ trợ tư vấn & kỹ thuật nhanh chóng qua Zalo: 
+            <a href="https://zalo.me/0935778727" target="_blank" style="color: #0284c7; text-decoration: underline;">0935.778.727</a>
+        </p>
         
         <div class="pricing-grid">
+            <!-- Gói Dùng Thử 30 Ngày -->
+            <div class="pricing-card" style="border: 2px dashed #059669; background: #f0fdf4;">
+                <div class="popular-badge" style="background: #059669;"><i class="fa-solid fa-star"></i> Trải nghiệm</div>
+                <div>
+                    <h3 class="pricing-title">Dùng Thử 30 Ngày</h3>
+                    <div class="pricing-price" style="color: #059669;">0 đ <span>/ 30 ngày</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Trải nghiệm toàn bộ tính năng</li>
+                        <li><i class="fa-solid fa-check"></i> Không cần thanh toán trước</li>
+                        <li><i class="fa-solid fa-check"></i> Hỗ trợ kỹ thuật qua Zalo 0935778727</li>
+                    </ul>
+                </div>
+                <a href="https://app.vetcare.vn/quanly/dangky-chupk?goi=30ngay" class="btn-pricing" style="background: #059669;">Đăng ký miễn phí</a>
+            </div>
+
             <!-- Gói 1 Tháng -->
             <div class="pricing-card">
                 <div>
@@ -308,6 +364,7 @@
     <!-- FOOTER -->
     <footer>
         <p>&copy; 2026 VetCare Pro. Giải pháp công nghệ chuyển đổi số ngành thú y.</p>
+        <p class="footer-support"><i class="fa-brands fa-whatsapp"></i> Hỗ trợ khách hàng qua Zalo: 0935.778.727</p>
     </footer>
 
 </body>
