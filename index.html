@@ -60,6 +60,24 @@
         .btn-chunuoi { background: #059669; color: white; padding: 12px 24px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 15px; display: inline-block; transition: background 0.2s; }
         .btn-chunuoi:hover { background: #047857; }
 
+        /* BẢNG GIÁ CHUẨN THEO ẢNH */
+        .pricing-section { padding: 80px 5%; background: #ffffff; text-align: center; border-top: 1px solid #e2e8f0; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1100px; margin: 0 auto; text-align: left; }
+        .pricing-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 40px 30px; display: flex; flex-direction: column; justify-content: space-between; position: relative; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
+        .pricing-card:hover { transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }
+        .pricing-card.popular { border: 2px solid var(--accent); background: #f8fafc; }
+        .popular-badge { position: absolute; top: -14px; left: 50%; transform: translateX(-50%); background: #dc2626; color: white; font-size: 11px; font-weight: bold; padding: 5px 16px; border-radius: 20px; text-transform: uppercase; display: flex; align-items: center; gap: 5px; box-shadow: 0 4px 10px rgba(220,38,38,0.2); }
+        .pricing-title { font-size: 20px; font-weight: 800; color: var(--primary); margin-bottom: 8px; text-align: center; }
+        .pricing-price { font-size: 28px; font-weight: 900; color: var(--accent); margin-bottom: 25px; text-align: center; }
+        .pricing-price span { font-size: 13px; font-weight: normal; color: #64748b; }
+        .pricing-features { list-style: none; margin-bottom: 30px; display: flex; flex-direction: column; gap: 14px; }
+        .pricing-features li { font-size: 13px; color: #334155; display: flex; align-items: center; gap: 10px; }
+        .pricing-features li i { color: #059669; font-size: 14px; }
+        .btn-pricing { display: block; text-align: center; background: var(--primary); color: white; padding: 12px; border-radius: 8px; font-weight: bold; text-decoration: none; font-size: 14px; transition: background 0.2s; }
+        .btn-pricing:hover { background: var(--accent); }
+        .pricing-card.popular .btn-pricing { background: var(--accent); }
+        .pricing-card.popular .btn-pricing:hover { background: #0369a1; }
+
         /* TÍNH NĂNG CHI TIẾT (4 CỘT) */
         .features-detail { padding: 80px 5%; background: var(--bg-light); text-align: center; }
         .features-detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 25px; text-align: left; margin-top: 40px; }
@@ -94,34 +112,16 @@
             background: linear-gradient(135deg, #047857, #065f46);
         }
 
-        /* --- CSS RESPONSIVE TỐI ƯU CHO MOBILE (FIX VỠ THANH MENU) --- */
+        /* --- RESPONSIVE MOBILE --- */
         @media screen and (max-width: 900px) {
-            header {
-                padding: 10px 12px;
-            }
-            /* Ẩn thanh menu ngang trên mobile để tránh tràn màn hình */
-            nav {
-                display: none; 
-            }
-            .logo {
-                font-size: 16px;
-            }
-            .auth-actions {
-                gap: 5px;
-            }
-            .btn-chunuoi-pro, .btn-dangky, .btn-dangnhap {
-                padding: 6px 10px;
-                font-size: 11px;
-            }
-            .hero {
-                padding: 40px 5%;
-            }
-            .hero-text h1 {
-                font-size: 26px;
-            }
-            .section-title {
-                font-size: 24px;
-            }
+            header { padding: 10px 12px; }
+            nav { display: none; }
+            .logo { font-size: 16px; }
+            .auth-actions { gap: 5px; }
+            .btn-chunuoi-pro, .btn-dangky, .btn-dangnhap { padding: 6px 10px; font-size: 11px; }
+            .hero { padding: 40px 5%; }
+            .hero-text h1 { font-size: 26px; }
+            .section-title { font-size: 24px; }
         }
     </style>
 </head>
@@ -134,10 +134,9 @@
             <a href="#">Giải pháp</a>
             <a href="#">Tính năng</a>
             <a href="#chunuoi-section">Cổng Chủ Nuôi</a>
-            <a href="#">Bảng giá</a>
+            <a href="#pricing-section">Bảng giá</a>
         </nav>
         <div class="auth-actions">
-            <!-- Nút Chủ nuôi Pro -->
             <a href="https://app.vetcare.vn/chunuoi/login" class="btn-chunuoi-pro">
                 <i class="fa-solid fa-paw"></i> Chủ nuôi
             </a>
@@ -152,7 +151,7 @@
             <span class="hero-badge">Dành cho phòng khám, bệnh viện và chuỗi thú y</span>
             <h1>Phần mềm quản lý phòng khám thú y toàn diện</h1>
             <p>Nền tảng số hóa toàn diện giúp tối ưu hóa quy trình lâm sàng, tự động hóa hồ sơ bệnh án và nâng cao chất lượng chăm sóc chuyên nghiệp.</p>
-            <a href="https://app.vetcare.vn/login" class="btn-dangnhap" style="padding: 12px 28px; font-size: 16px; display: inline-block;">Trải nghiệm ngay</a>
+            <a href="https://app.vetcare.vn/quanly/dangky-chupk" class="btn-dangnhap" style="padding: 12px 28px; font-size: 16px; display: inline-block;">Trải nghiệm ngay</a>
         </div>
         <div class="hero-image">
             <div class="screen-mockup">
@@ -207,6 +206,59 @@
             <h3 style="color: #065f46; font-size: 20px; margin-bottom: 10px;">Trải Nghiệm Dễ Dàng</h3>
             <p style="color: #047857; font-size: 14px; margin-bottom: 20px;">Đăng nhập đơn giản bằng số điện thoại để xem toàn bộ thông tin thú cưng của bạn tại phòng khám.</p>
             <a href="https://app.vetcare.vn/chunuoi/login" style="color: #059669; font-weight: bold; text-decoration: underline; font-size: 14px;">Bấm vào đây để vào cổng chủ nuôi &rarr;</a>
+        </div>
+    </section>
+
+    <!-- BẢNG GIÁ DỊCH VỤ & ĐĂNG KÝ (ĐÃ CẬP NHẬT THEO YÊU CẦU) -->
+    <section id="pricing-section" class="pricing-section">
+        <h2 class="section-title">Bảng giá dịch vụ phần mềm linh hoạt</h2>
+        <p style="color: #64748b; margin-top: -30px; margin-bottom: 40px; font-size: 16px;">Lựa chọn gói cước phù hợp nhất với quy mô phòng khám của bạn</p>
+        
+        <div class="pricing-grid">
+            <!-- Gói 1 Tháng -->
+            <div class="pricing-card">
+                <div>
+                    <h3 class="pricing-title">Gói 1 Tháng</h3>
+                    <div class="pricing-price">150.000 đ <span>/ tháng</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Đầy đủ tính năng quản lý</li>
+                        <li><i class="fa-solid fa-check"></i> Không giới hạn lưu trữ dữ liệu</li>
+                        <li><i class="fa-solid fa-check"></i> Hỗ trợ kỹ thuật 24/7</li>
+                    </ul>
+                </div>
+                <a href="https://app.vetcare.vn/quanly/dangky-chupk?goi=1thang" class="btn-pricing">Đăng ký ngay</a>
+            </div>
+
+            <!-- Gói 6 Tháng (Có badge tặng thêm 1 tháng) -->
+            <div class="pricing-card popular">
+                <div class="popular-badge"><i class="fa-solid fa-gift"></i> Tặng thêm 1 tháng</div>
+                <div>
+                    <h3 class="pricing-title">Gói 6 Tháng</h3>
+                    <div class="pricing-price" style="color: #059669;">1.000.000 đ <span>/ 7 tháng</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Mua 6 tháng tặng ngay 1 tháng</li>
+                        <li><i class="fa-solid fa-check"></i> Đầy đủ tính năng quản lý</li>
+                        <li><i class="fa-solid fa-check"></i> Không giới hạn dung lượng</li>
+                        <li><i class="fa-solid fa-check"></i> Hỗ trợ ưu tiên qua Zalo/SĐT</li>
+                    </ul>
+                </div>
+                <a href="https://app.vetcare.vn/quanly/dangky-chupk?goi=6thang" class="btn-pricing" style="background: #059669;">Đăng ký ngay</a>
+            </div>
+
+            <!-- Gói 2 Năm (24 Tháng) -->
+            <div class="pricing-card">
+                <div>
+                    <h3 class="pricing-title">Gói 2 Năm (24 Tháng)</h3>
+                    <div class="pricing-price">2.000.000 đ <span>/ 2 năm</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check"></i> Tiết kiệm chi phí tối đa</li>
+                        <li><i class="fa-solid fa-check"></i> Cam kết giữ giá cố định lâu dài</li>
+                        <li><i class="fa-solid fa-check"></i> Đầy đủ tính năng cao cấp</li>
+                        <li><i class="fa-solid fa-check"></i> Hỗ trợ đào tạo nhân viên miễn phí</li>
+                    </ul>
+                </div>
+                <a href="https://app.vetcare.vn/quanly/dangky-chupk?goi=2nam" class="btn-pricing">Đăng ký ngay</a>
+            </div>
         </div>
     </section>
 
