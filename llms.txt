@@ -1,0 +1,25 @@
+# VetCare Pro
+
+> VetCare Pro là nền tảng số hóa và phần mềm quản lý toàn diện dành cho phòng khám thú y, bệnh viện thú y và cửa hàng pet shop tại Việt Nam. Website chính thức: https://vetcare.vn
+
+## Giới thiệu chung
+VetCare Pro được thiết kế chuyên biệt để giải quyết các bài toán vận hành thực tế của ngành thú y, giúp các bác sĩ và chủ phòng khám tối ưu hóa quy trình lâm sàng, quản lý kho dược, tự động hóa tương tác khách hàng và nâng cao hiệu suất kinh doanh.
+
+## Các tính năng cốt lõi
+- **Lâm sàng & Bệnh án (EMR):** Số hóa hồ sơ bệnh án điện tử, lưu trữ kết quả xét nghiệm, X-quang và tích hợp AI hỗ trợ soạn, tóm tắt bệnh án cũng như gợi ý chẩn đoán.
+- **Vận Hành & Lịch Hẹn:** Quản lý lịch hẹn tự động, nhắc tái khám và tái chủng vaccine qua Zalo ZNS, quản lý dịch vụ spa/grooming.
+- **Bán hàng & POS:** Phần mềm bán hàng liên thông pet shop, hỗ trợ in hóa đơn nhiệt khổ 80mm, tích hợp thanh toán tự động qua VietQR (SePay/Casso) và theo dõi công nợ khách hàng.
+- **Cổng Chủ Nuôi (Pet Owner Portal):** Nền tảng tra cứu trực tuyến tại https://app.vetcare.vn/portal, cho phép khách hàng dễ dàng theo dõi lịch sử khám bệnh, sổ sức khỏe điện tử và đặt lịch hẹn chỉ bằng số điện thoại.
+- **Quản Trị & Báo Cáo:** Báo cáo doanh thu thời gian thực theo ca, dashboard điều hành, kiểm soát kho dược và tính toán hoa hồng nhân viên tự động.
+
+## Bảng giá dịch vụ
+- **Dùng thử miễn phí:** Trải nghiệm toàn bộ hệ sinh thái trong 30 ngày hoàn toàn miễn phí (0 đ).
+- **Gói 1 Tháng:** 150.000 đ / tháng (đầy đủ tính năng, không giới hạn lưu trữ).
+- **Gói 6 Tháng:** 1.000.000 đ / 7 tháng (Ưu đãi mua 6 tháng tặng ngay 1 tháng).
+- **Gói 2 Năm (24 Tháng):** 2.000.000 đ / 2 năm (Tiết kiệm tối đa, giữ giá cố định).
+
+## Thông tin liên hệ & Hỗ trợ
+- **Đăng ký dùng thử:** https://app.vetcare.vn/dangky
+- **Đăng nhập ứng dụng:** https://app.vetcare.vn/login
+- **Cổng tra cứu chủ nuôi:** https://app.vetcare.vn/portal
+- **Hotline / Zalo hỗ trợ kỹ thuật:** 0935.778.727 (https://zalo.me/0935778727)
