@@ -1,0 +1,11 @@
+# Cho phép tất cả các con bọ tìm kiếm (Google, Bing, AI bots...) truy cập toàn bộ trang web
+User-agent: *
+Allow: /
+
+# Chặn các trang quản trị hoặc trang đăng nhập hệ thống app (nếu có) để tiết kiệm tài nguyên quét
+Disallow: /login
+Disallow: /dangky
+Disallow: /portal
+
+# Khai báo đường dẫn trỏ tới Sitemap của website
+Sitemap: https://vetcare.vn/sitemap.xml
